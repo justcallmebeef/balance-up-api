@@ -11,7 +11,6 @@ const getUsers = (req, res) => {
     if (error) {
       throw error;
     }
-    console.log("res", results);
     res.status(200).json(results.rows);
   });
 };
